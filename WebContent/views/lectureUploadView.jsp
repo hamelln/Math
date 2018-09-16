@@ -11,7 +11,7 @@
 
 	<form class="form-horizontal" action="lecture.do" method="post" >
 		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">강의제목</label>
+			<label for="inputEmail3" class="col-sm-2 control-label">강의 제목</label>
 			<div class="col-sm-10">
 				<input type="email" class="form-control" id="inputlectureName"
 					placeholder="강의이름을 입력하세요.">
@@ -27,7 +27,6 @@
 		<div class="form-group">
 			<label for="exampleInputFile">파일 업로드</label> <input type="file"
 				id="exampleInputFile">
-			<p class="help-block">여기에 블록레벨 도움말 예제</p>
 		</div>
 		<div class="form-group">
 			<label class="sr-only" for="exampleInputEmail3">강의 가격</label> <input
