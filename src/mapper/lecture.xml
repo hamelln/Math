@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lectureMapper">
+	<select id="selectAlllecture" resultType="Lecture">
+		select * from lecture
+	</select>
+
+	<select id="selectALecture" parameterType="Integer"
+		resultType="LectureBean">
+		select * from lecture where no = #{no}
+	</select>
+
+	<insert id="insertLecture" parameterType="Lecture">
+		insert
+		into lecture
+		(name, simple_desc, detail_desc, img, price, intro_video)
+		values
+		(#{name}, #{simple_desc}, #{detail_desc}, #{img}, #{price}, #{intro_video})
+	</insert>
+
+	<update id="updateLecture" parameterType="Lecture">
+		update lecture set
+		name = #{name},
+		simple_desc = #{simple_desc},
+		detail_desc = #{detail_desc},
+		img = #{img},
+		price = #{price},
+		intro_video = #{intro_video}
+		where no = #{no}
+	</update>
+
+	<delete id="deleteLecture">
+		delete from lecture where no = #{no}
+	</delete>
+
+	<select id="countLecture" resultType="Integer">
+		select count(*) from lecture
+	</select>
+
+</mapper>
