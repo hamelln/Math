@@ -25,7 +25,7 @@
 		<textarea class="form-control" rows="3"></textarea>
 
 		<div class="form-group">
-			<label for="exampleInputFile">파일 업로드s</label> <input type="file"
+			<label for="exampleInputFile">파일 업로드</label> <input type="file"
 				id="exampleInputFile">
 		</div>
 		<div class="form-group">
